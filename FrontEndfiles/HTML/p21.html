@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,tr,td{
+            border: 1px #ffd700 solid;
+        }
+    </style>
+</head>
+<body>
+    <h3>Registration Form</h3>
+    <form action="" enctype="multipart/form-data" method="post" autocomplete="off">
+        <table>
+            <tr>
+                <th>Enter your first name</th>
+                <td><input type="text" name="first" id="first" placeholder="enter first name" readonly required></td>
+            </tr>
+            <tr>
+                <th>Enter your last name</th>
+                <td><input type="text" name="last"  placeholder="enter last name" autofocus required></td>
+            </tr>
+            <tr>
+                <th>Enter the password</th>
+                <td><input type="password" name="pass"  placeholder="enter the pass" required></td>
+            </tr>
+            <tr>
+                <th>Confirm password</th>
+                <td><input type="password" name="pass"  placeholder="re-enter pass" required></td>
+            </tr>
+            <tr>
+                <th>Enter the Mobile num</th>
+                <td><input type="number" name="num"  placeholder="mobile num" required></td>
+            </tr>
+            <tr>
+                <th>Enter your Address</th>
+                <td><textarea name="" id="" cols="30" rows="5" placeholder="Pls enter ur address"></textarea></td>
+            </tr>
+            <tr>
+                <th>Select your gender</th>
+                <label for="">
+                <td>Male<input type="radio" name="gen" value="male" required>
+                    Female<input type="radio" name="gen" value="female" required></td>
+            </label>
+            </tr>
+            <tr>
+                <th>select your Hobbies</th>
+                <td>
+                <label for="hob1">hobby1 <input type="checkbox" name="hobby1" value="cycling" required></label>
+                <label for="hob2">hobby2 <input type="checkbox" name="hobby2" value="riding" required></label>
+                <label for="hob3">hobby3 <input type="checkbox" name="hobby3" value="trekking" required></label>
+                
+            </td>
+            </tr>
+            <tr>
+                <th>Date of birth</th>
+                <td><input type="date" name="DOB"  placeholder="DOB" required></td>
+            </tr>
+            <tr>
+                <th>Select your Country</th>
+                <td>
+                    <select name="country" id="country" multiple>
+                        <option value="null">Choose your Country to visit</option>
+                        <option value="Indonasiya">Indonasiya</option>
+                        <option value="india">india</option>
+                        <option value="Australia">Australia</option>
+                        <option value="japan">japan</option>
+                        <option value="buthan">Buthan</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>File to Uplode</th>
+                <td><input type="file" name="file" id="" required></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="save my data">
+                    <input type="reset" value="Clear">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

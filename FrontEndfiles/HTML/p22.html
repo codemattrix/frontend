@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+    student Registration Form
+    </header>
+    <form action="" enctype="multipart/form-data" method="post" autocomplete="off">
+        <table>
+            <tr>
+                <th>Enter name:</th>
+                <td><input type="text" name="first" id="first" placeholder="Enter Full name" readonly required></td>
+            </tr>
+            <tr>
+                <th>Father's name:</th>
+                <td><input type="text" name="last"  placeholder="" autofocus required></td>
+            </tr>
+            <tr>
+                <th>Mother's name:</th>
+                <td><input type="text" name="text"  placeholder="" required></td>
+            </tr>
+            <tr>
+                <th>Email:</th>
+                <td><input type="email" name="email"  placeholder="sample@gmail.com" required></td>
+            </tr>
+            <tr>
+                <th>Enter the Mobile num:</th>
+                <td><input type="number" name="num"  placeholder="mobile num" required></td>
+            </tr>
+            <th>Select your gender:</th>
+                <label for="">
+                <td>Male<input type="radio" name="gen" value="male" required>
+                    Female<input type="radio" name="gen" value="female" required>
+                   other<input type="radio" name="gen" value="other" required></td>
+            </label>
+            </tr>
+            <tr>
+                <th>Date of birth:</th>
+                <td><input type="date" name="DOB"  placeholder="DOB" required></td>
+            </tr>
+            <tr>
+                <th>Enter your Address:</th>
+                <td><textarea name="" id="" cols="30" rows="5" placeholder="Pls enter ur address"></textarea></td>
+            </tr>
+            <tr>
+                
+            <tr>
+                <th>select your blood Group:</th>
+                <td>
+                    <select name="blood">
+                        <option value="null">select</option>
+                        <option value="A+">A+</option>
+                        <option value="B+">B+</option>
+                        <option value="AB+">AB+</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                    </select>    
+            </td>
+            </tr>
+           
+            <tr>
+                <th>Department:</th>
+                <td>
+                    <label for="">
+                        <input type="radio" name="dep" id="" required>CSE
+                    </label>
+                    <label for="">
+                        <input type="radio" name="dep" id="" required>ISE
+                    </label>
+                    <label for="">
+                        <input type="radio" name="dep" id="" required>EEE
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <th>Course:</th>
+                <td><label><input type="checkbox" name="Course1" id="" required>C
+                    <input type="checkbox" name="Course2" id="" required>C++
+                   <input type="checkbox" name="Course3" id="" required> HTML
+                    <input type="checkbox" name="Course4" id="" required>JAVA
+                </label></td>
+            </tr>
+            <tr>
+                <th>Photo:</th>
+                <td><input type="file" name="file" id="" required></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="save my data">
+                    <input type="reset" value="Clear">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

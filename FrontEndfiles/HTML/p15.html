@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        action => server file/ path()
+        method => post =>hide the data
+                   get =>display the data in URL address bar
+        autocomplete =>clear the History  off/on
+        enctype=>encrypt type=>file uploding (multipart/form -data)
+        required =>mandatory fill the input field (to recognize the empty field)
+          
+    -->
+    <form action="http://localhost/server.php" method="get" autocomplete="off">
+        <fieldset>
+            <legend>Login Form</legend>
+            <label for="user">Username</label>
+            <input type="text" name="user" id="user" value="ravishnaikkm008@gmail.com" readonly required>
+            <br><br>
+
+            <label for="pass">Password</label>
+            <input type="password" name="pass" id="pass" value="" placeholder="pass is of 6 char and above" required>
+
+            <br><br>
+            <input type="submit" value="Sigin">
+            <input type="reset" value="clear">
+        </fieldset>
+    </form>
+    <!---->
+
+</body>
+</html>

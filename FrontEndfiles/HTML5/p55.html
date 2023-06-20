@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sub {
+            width: 500px;
+            padding: 40px;
+            text-align: center;
+            background-color: rgb(105, 133, 160);
+            box-shadow: 3px 4px rgb(36, 36, 28);
+        }
+    </style>
+</head>
+<body>
+   <h3>Dialog</h3>
+   <button id="show">Show Dialog</button>
+   <dialog class="sub" id="MyDialog">
+    <button id="close">&times;</button>
+    <h3>My Dialog Heading</h3>
+    <form action="">
+        <label for="">Subscribe here</label>
+        <input type="email" name="subscribe" id="subscribe" placeholder="Enter your email id to Subscribe">
+        <br><br>
+        <input type="submit" value="subscribe">
+    </form>
+   </dialog>
+   <script>
+    var myDialog = document.getElementById("MyDialog");
+    document.getElementById("show").onclick=function(){
+        myDialog.show();
+    }
+    document.getElementById("close").onclick=function(){
+        myDialog.close();
+    }
+   </script>
+</body>
+</html>

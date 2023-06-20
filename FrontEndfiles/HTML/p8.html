@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,tr,th,td{
+           border:1px gray solid;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        td,th{
+            padding: 10px;
+        }
+        th{
+            background-color: #999;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h3>Tables</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>First-name</th>
+                <th>Last-name</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ravish</td>
+                <td>Nayaka</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>Ambuja</td>
+                <td>Nayaka</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>Mahadeva</td>
+                <td>Nayaka</td>
+                <td>90</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">
+                    Total
+                </td>
+                <td>250</td>
+            </tr>
+        </tfoot>
+    </table>
+    <!--without-->
+    <hr>
+    <table>
+        <tr>
+        <th>Roll-num</th>
+        <th>Student-name</th>
+        <th>Marks</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>John</td>
+        <td>60</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Jony</td>
+        <td>80</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Jimmy</td>
+        <td>90</td>
+    </tr>
+    <tr>
+        <td colspan="2">Total</td>
+        <td>230</td>
+    </tr>
+    </table>
+   <hr>
+    <table>
+        <tr>
+            <th>Products</th>
+            <th>Flavours</th>
+        </tr>
+        <tr>
+            <td rowspan="3">Milk</td>
+            <td>Almond</td>
+        </tr>
+        <tr>
+            <td>Mango</td>
+        </tr>
+        <tr>
+            <td>Goova</td></tr>
+        <tr>
+            <td colspan="2">This is all Flavours</td></tr>
+    </table>
+
+</body>
+</html>

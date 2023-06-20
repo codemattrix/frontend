@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form div {
+            border: 1px solid slategray;
+            padding:5px;
+            width: 400px;
+            justify-content:left;
+            display: flex;
+            margin-left:30%;
+        }
+        table,tr,td{
+            border: 1px rgb(58, 38, 12) solid;
+        }
+       body header{
+        background-color: aqua;
+        border: 1px solid slategray;
+            padding:5px;
+            width: 400px;
+            justify-content:left;
+            display: flex;
+            margin-left:30%;
+       }
+    </style>
+</head>
+<body>
+    <header><b>This is Registration Form</b></header>
+    <form action="" enctype="multipart/form-data">
+        
+        <div>
+            <label for="">Student Image:</label>
+                <table>
+                    <tr>
+                        <td><input type="file" id="" name="file"></td>
+                    </tr>
+                </table>
+            
+        </div>
+        <div>
+            <label for="">Student name:
+                <input type="text" name="student" placeholder="full name" id="" required>
+            </label>
+        </div>
+        <div>
+            <label for="">Father name:
+                <input type="text" name="father" id="" placeholder="father name" required>
+            </label>
+        </div>
+        <div>
+            <label for="">Mother name:
+                <input type="text" name="mother" id="" placeholder="mother name" required>
+            </label>
+        </div>
+        <div>
+            <label for="">Gender:
+                <input type="radio" name="gen" id="" value="Male" required>Male
+                <input type="radio" name="gen" id="" value="Female" required>Female
+                <input type="radio" name="gen" id="" value="other" required>Other
+            </label>
+        </div>
+        <div>
+            <label for="">Date of Birth
+                <input type="date" name="DOB" id="" required>
+            </label>
+        </div>
+        <div>
+            <label>Email:
+                <input type="email" name="email" required placeholder="sample@gmail.com">
+            </label>
+        </div>
+        <div>
+            <label>Graduation:
+                <select>
+                    <option value="null">select</option>
+                    <option value="BA">BA</option>
+                    <option value="B.com">B.com</option>
+                    <option value="BE">BE</option>
+                    <option value="MMBS">MMBS</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <label>Department:
+                <select>
+                    <option value="null">select</option>
+                    <option value="BA">CSE</option>
+                    <option value="B.com">ISE</option>
+                    <option value="BE">statestic</option>
+                    <option value="MMBS">neurology</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <label for="">Mobile:
+                <input type="tel" name="num" required placeholder="+91xxxxx-xxxxx">
+            </label>
+        </div>
+        <div>
+            <input type="submit">
+            <input type="reset">
+        </div>
+    </form>
+</body>
+</html>

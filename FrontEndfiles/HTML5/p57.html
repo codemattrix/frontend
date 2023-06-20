@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        header{
+            padding: 20px;
+            background: #aaa;
+            opacity: 0.5;
+        }
+        .menu a{
+            text-decoration: none;
+            background: slateblue;
+            color: #fff;
+            padding: 15px 18px;
+        }
+        .menu a:hover{
+            background: orangered;
+        }
+        .menu .right{
+            position: absolute;
+            right: 15px;
+            top: 6px !important;
+        }
+        .menu .right a{
+            float: left;
+            margin-left: 3px;
+        }
+        section{
+            display: flex;
+            height: 100vh;
+        }
+        aside{
+            background: gold;
+            color: #fff;
+            width: 10vw;
+            padding: 20px;
+        }
+        .center{
+            padding:20px;
+            height: 100vh;
+        }
+        .center p{
+            text-align: justify;
+            word-break: break-all;
+            line-height: 25px;
+        }
+        footer{
+            background: #222;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+        @media screen and (max-width:767px){
+            .menu .right{
+                position: relative;
+                left:0px;
+                top: 15px !important;
+                margin: 10px;
+            }
+            .menu .right a{
+                float: none;
+                display: block;
+                margin-top: 5px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <a href="#" class="logo">Portfolio</a>
+            <div class="right">
+                <a href="https://google.com">Home</a>
+                <a href="#">About</a>
+                <a href="#">Mywork</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <aside><p>left-Sidebar</p></aside>
+        <div class="center">
+            <h3>Welcome to HTML5</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam blanditiis sed quisquam architecto dignissimos vel voluptas. Tenetur debitis beatae sint possimus suscipit rem dolores deleniti culpa? Soluta facere atque vel!</p>
+        </div>
+        <aside><p>Right-Sidebar</p></aside>
+    </section>
+    <footer>
+        <p>All rights Reserved. &copy; 2022</p>
+    </footer>
+</body>
+</html>
