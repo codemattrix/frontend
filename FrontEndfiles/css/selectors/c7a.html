@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 300px;
+            text-align: center;
+            
+        }
+        table,colgroup,col,tr,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        /* col.selected || td{          <!-- where u given colspan that all field get affect-->
+            background-color:green;
+        } */
+    </style>
+</head>
+<body>
+    <h1>column combinator || (not compatable to any browser )</h1>
+    <table>
+        <colgroup>
+            <col span="2">
+            <col class="selected">
+        </colgroup>
+        <tbody>
+            <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td colspan="2">D</td>
+                <td>E</td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td colspan="2">G</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

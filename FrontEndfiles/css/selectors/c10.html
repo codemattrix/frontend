@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,tr,th,td{
+            border: 2px solid #2222;
+            border-collapse: collapse;
+        }
+        tr,td,th {
+            padding: 10px;
+        }
+        th[colspan|="2"]{
+            background-color: darkseagreen;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>element[attr|=value]</h1>
+    <p>Represents elements with an attribute name of attr whose value can be exact same value or can begin with value immdiately followed by a hyphen</p>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th colspan="2">Mobile</th>
+        </tr>
+        <tr>
+            <td>Raju</td>
+            <td>raju123@gmail.com</td>
+            <td>9988123456</td>
+            <td>9988126456</td>
+        </tr>
+        <tr>
+            <td>Ananth</td>
+            <td>ananth123@gmail.com</td>
+            <td>9988123456</td>
+            <td>9988126456</td>
+        </tr>
+    </table>
+</body>
+</html>
