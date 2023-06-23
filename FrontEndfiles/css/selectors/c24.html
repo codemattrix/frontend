@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li:first-child{
+            color: blueviolet;
+            font-weight: bold;
+        }
+        ul li:last-child{
+            color: brown;
+            font-weight: bold;
+        }
+        section div:first-child{
+           color: blue;
+           font-weight: bold;
+        }
+        section div:last-child{
+            color: chocolate;
+            font-weight: bold;
+        }
+        section div:nth-child(3){
+           color:yellow;
+           font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h3>:first-child & last-child</h3>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+        <li>item 6</li>
+    </ul>
+    <section>
+        <div>
+            <p>1st div section</p>
+        </div>
+        <div>
+            <p>2nd div section</p>
+        </div>
+        <div>
+            <p>3rd div section</p>
+        </div>
+        <div>
+            <p>4th div section</p>
+        </div>
+        <div>
+            <p>5th div section</p>
+        </div>
+    </section>
+</body>
+</html>

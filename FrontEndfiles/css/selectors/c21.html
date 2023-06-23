@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="text"]:empty{
+            background-color: gray;
+        }
+        input[type="password"]:empty{
+            background-color: rgb(161, 20, 20);
+        }
+        input[type="number"]:empty{
+            background-color:orange;
+        }
+        input[type="email"]:empty{
+            background-color:lime;
+        }
+        input[type="date"]:empty{
+            background-color:lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h3>:empty</h3>
+    <form action="">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name"><br>
+        <label for="pass">Pass</label>
+        <input type="password" name="pass" id="name"><br>
+        <label for="num">Num</label>
+        <input type="number" name="num" id="name"><br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="name"><br>
+        <label for="date">Date</label>
+        <input type="date" name="date" id="name"><br>
+    </form>
+</body>
+</html>
