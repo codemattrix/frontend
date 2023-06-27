@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: calibri,sans-serif;
+        }
+        div{
+            
+            padding: 20px;
+            background-color: lightgray;
+            width: 400px;
+            border-radius: 5px;
+            align-items: center;
+
+        }
+        input{
+            padding: 10px;
+            border-radius: 30px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3>Job Enrollment</h3>
+        <form action="">
+            <label>Username:</label><br>
+                <input type="text" name="name" value="" placeholder="Enter your name" required><br>
+                <label>Password:</label><br>
+                <input type="password" name="pass" placeholder="Password" required><br>
+                <label>Email:</label><br>
+                <input type="email" name="email" value="" placeholder="Enter email" required><br>
+                <label>About yourself:</label><br>
+                <textarea rows="4" cols="20"></textarea><br>
+                <label>Designation:</label><br>
+                <input type="text" list="section">
+                <datalist id="section">
+                    <option>Manager</option>
+                    <option>IT team lead</option>
+                    <option>Junior Developer</option>
+                    <option>Software-developer</option>
+                </datalist><br>
+                <label for="">DOB:</label><br>
+                <input type="date" name="DOB" required><br>
+                <label>Your Image:</label><br>
+                <input type="file" required><br>
+                <label>Mobile-number:</label><br>
+                <input type="tel" name="tel" required><br>
+                <label>Programming level:</label><br>
+                <input type="checkbox" name="pro" value="pro" >Beginner
+                <input type="checkbox" name="pro1" value="pro1" >Intermediate
+                <input type="checkbox" name="pro2" value="pro2" >Professional<br>
+                <label>Expertise in:</label><br>
+                <input type="radio" name="exp" value="Backend" required>Backend
+                <input type="radio" name="exp" value="Frontend" required>Frontend
+                <input type="radio" name="exp" value="Data-base" required>Data-base
+                <input type="radio" name="exp" value="Full-stack" required>Full-stack<br>
+                <label>Website URL:</label><br>
+                <input type="url" name="url" value="">
+                <br>
+                <input type="submit" value="Enroll">
+                <input type="reset" >
+        </form>
+    </div>
+</body>
+</html>
