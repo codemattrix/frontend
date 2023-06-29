@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p1{direction:rtl;}
+        .p2{direction:rtl;
+            unicode-bidi: bidi-override;
+       }
+        .p3{
+            white-space: pre-wrap;/*pre,pre-wrap,pre-line*/
+        }
+    </style>
+</head>
+<body>
+    <p class="p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas tenetur nisi inventore tempore est fugit aliquid tempora rem exercitationem laboriosam dolores sit optio, nostrum autem facilis accusamus explicabo? Similique, voluptate.</p>
+
+    <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, nemo laudantium! Ipsum laudantium vel illum neque, pariatur dolor qui laboriosam repellat. Magnam, ut cumque! Asperiores, sapiente. Sequi dolor dolorum eos!</p>
+    <pre>
+        function pro(a,b){
+            return a*b;
+        }
+        pro(100,123);
+    </pre>
+    <hr>
+    <p class="p3">
+        function pro(a,b){
+            return a*b;
+        }
+        pro(100,123);
+    </p>
+</body>
+</html>
