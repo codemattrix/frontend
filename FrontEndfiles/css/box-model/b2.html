@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 350px;
+            height: 100vh;
+            background-color: gray;
+        }
+        .card-1,.card-2{
+            margin: 20px;
+            padding: 20px;
+            width: 300px;
+            color: deepskyblue;
+            border: 2px solid #222;
+        }
+        .card-1{
+            box-sizing: border-box;/* adjust with in the content limit*/
+        }
+        .card-2{
+            box-sizing: content-box;/* overflow*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card-1">
+            <h1>header-1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, quis deserunt. Culpa quas illum voluptates fugit pariatur hic! Facilis laboriosam harum fugit, quisquam nam maxime at! Iste asperiores dolorem perspiciatis?</p>
+        </div>
+        <div class="card-2">
+            <h1>header-2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, accusantium vero? Dolore, similique quo! Quaerat provident itaque qui nihil, explicabo rem ea, amet laudantium velit corporis necessitatibus distinctio eveniet quisquam!</p>
+        </div>
+    </div>
+</body>
+</html>
