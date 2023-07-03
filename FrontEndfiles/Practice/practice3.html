@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-position: center;
+        }
+        .container{
+            width: 500px;
+            height: auto;
+            
+        }
+        .card{
+            
+            background-color: rgb(144, 216, 71);
+        }
+        div{
+            margin: 10px;
+            padding: 10px;
+            background-color: rgba(207, 248, 168, 0.4);
+            width: 400px;
+            height: auto;
+            box-sizing: border-box;
+           
+        }
+        label input{
+            margin:10px;
+            text-align: justify;
+            border-radius: 20px;
+        }
+        label input:placeholder-shown{
+            font-style: italic;
+        }
+        button{text-align: center;
+        background-color: black;
+        color: whitesmoke;
+        border-radius: 20%;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <form action="">
+                
+                <h4>Step-1:Your details</h4><br>
+                <div>
+                <label for="">Name<input type="text" name="text" placeholder="First and Last name"></label><br>
+                <label for="">Email<input type="email" name="email" placeholder="Example@domain.com"></label><br>
+                <label for="">Phone<input type="tel" name="tel" placeholder="Eg.+91-xxxxx-xxxxx"></label><br>
+            </div>
+            
+                <h4>Step-2:Delivery address</h4><br>
+                <div>
+                <label for="">Address <textarea rows="5" cols="20"></textarea></label><br>
+                <label for="">Post code<input type="number" name="num"></label><br>
+                <label for="">Counrty<input type="text" name="text"></label><br>
+            </div>
+
+                <h4>Card details</h4>
+                <div>
+                <label for=""><i>card type</i><br><input type="radio" name="red" value="VISA">VISA
+                <input type="radio" name="red" value="AmEx">AmEx
+                <input type="radio" name="red" value="Mastercard">Mastercard</label><br>
+                <label for="">Card number<input type="number" name="num" value=""><br>
+                Security code<input type="number" name=""><br>
+                Name On Card<input type="text" name="text" placeholder="exact name as in the card"></label><br>
+            </div>
+                <button type="button">BUY IT!</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

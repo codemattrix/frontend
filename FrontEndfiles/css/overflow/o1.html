@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            text-align: justify;
+            margin: 100px;
+            border: 2px solid #ff2200;
+        }
+        .card-1{
+            overflow-y: hidden;/*auto,scroll,none,hidden*/
+        }
+        .card-2{
+            overflow: auto;
+        }
+        .card-3{
+            overflow-x: scroll;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
+    <h3>Overflow:hidden</h3>
+    <div class="card-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam veniam modi dolor perferendis cumque error quam nemo doloremque, sed voluptatem natus eum quia quod quidem mollitia excepturi et voluptas placeat!</div>
+    
+    <h3>Overflow:auto</h3>
+    <div class="card-2">
+        <p>Loremipsum,dolositametconsecteturadipisicingelit.Namrepellendusnostrumoditeiuscupiditatevoluptatibusveritatisvoluptasteneturvoluptatedebitistotam,ipsum facilis incidunt reprehenderit. Doloremque eaque repudiandae magnam dignissimos.
+            LoremipsumdolositametconsecteturadipisicingelitNamrepellendusnostrumoditeiuscupiditatevoluptatibusveritatisvoluptasteneturvoluptatedebitistotam,ipsum facilis incidunt reprehenderit. Doloremque eaque repudiandae magnam dignissimos
+        </p>
+    </div>
+    <div class="card-3">
+        <p>LoremipsumdolositametconsecteturadipisicingelitNamrepellendusnostrumoditeiuscupiditatevoluptatibusveritatisvoluptasteneturvoluptatedebitistotam,ipsum facilis incidunt reprehenderit. Doloremque eaque repudiandae magnam dignissimos.</p>
+    </div>
+</body>
+</html>
