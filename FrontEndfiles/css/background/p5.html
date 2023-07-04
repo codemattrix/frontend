@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{font-family: 'Courier New', Courier, monospace;}
+
+        
+        #color{
+            background-color: blanchedalmond;
+            color: black;
+        }
+        #image{
+            width: 400px;
+            height: auto;
+            background-image: url("../Images/isolated-small-tree-260nw-566112781.webp");
+            box-shadow: 0 0 10px black;
+            background-size: cover;
+        }
+
+        #bg-image{
+            width: 400px;
+            height: 300px;
+            background-image: url("../Images/pexels-picjumbocom-196658.jpg");
+            box-shadow: 0 0 10px black;
+            background-size: cover;
+        }
+
+        #repeat{
+            width: 400px;
+            height: 300px;
+            background-image: url("../Images/isolated-small-tree-260nw-566112781.webp");
+            background-repeat:repeat-x;
+            box-shadow: 0 0 10px black;
+            background-color: bisque;
+        }
+
+        #attachment{
+            width: 800px;
+            height: 600px;
+            background-image: url("../Images/IMG_20220528_111415.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        #gradient{
+            width: 400px;
+            height: 400px;
+            background: linear-gradient(180deg,rgb(19, 10, 10),rgb(233, 209, 209),rgb(20, 11, 11));
+        }
+    </style>
+</head>
+<body>
+    <h2>this is Color</h2>
+    <div id="color">
+    <h3>this is division color </h3>
+     </div>   
+
+     <h2>this is image</h2>
+    <div id="image">
+    <h3>this is division image</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur incidunt libero voluptatem dicta cupiditate laboriosam, culpa veniam ut dignissimos maiores iure voluptates, sed minus eum ex neque beatae ratione optio?</p>
+     </div>
+     
+     <h2> background Image</h2>
+     <div id="bg-image"></div>
+
+     <h2>background repeat</h2>
+     <div id="repeat"></div>
+
+     <h2>background attachment</h2>
+     <div id="attachment"></div>
+
+     <h2>Lienear-gradient</h2>
+     <div id="gradient"></div>
+</body>
+</html>
