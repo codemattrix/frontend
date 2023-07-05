@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 1500px;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 2px solid rgb(8, 8, 8);
+        }
+        .b1{
+            background-color: rebeccapurple;
+            position: relative;
+            left: 200px;
+            top: 80px;
+            z-index: 3;
+        }
+        .container{
+            width: 500px;
+            height: 300px;
+            background-color: rgba(54, 40, 40,.5);
+            position: relative;
+            left: 200px;
+            z-index: 2;
+        }
+        .b2{
+            background-color: rgb(97, 194, 7);
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+        .b3{
+            background-color: rgb(13, 200, 247);
+            position: absolute;
+            right: 100px;
+            bottom: 100px;
+        }
+        .b4{
+            background-color: rgb(248, 225, 20);
+            position: fixed;
+            right: 600px;
+            bottom: 400px;
+            z-index: 1;
+        }
+        .b5{
+            background-color: rgb(224, 18, 80);
+            position: sticky;
+            top: 0;
+            left: 0;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box b1"></div>
+    <div class="container">
+        <div class="box b2"></div>
+        <div class="box b3"></div>
+    </div>
+    <div class="box b4"></div>
+    <div class="box b5"></div>
+</body>
+</html>

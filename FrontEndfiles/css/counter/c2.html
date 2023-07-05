@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            padding: 20px;
+            counter-reset: ch;
+            border: 2px solid black;
+        }
+        h2::before{
+            counter-increment: ch;
+            content: counter(ch) ".) ";
+        }
+        h2{width: 200px;
+            background-color: red;
+            counter-reset: topic;}
+
+        h4{width: 200px;
+            background-color: green;
+            margin-left: 20px;
+            counter-reset: subT;
+        }
+        h4::before{
+            counter-increment: topic;
+            content: counter(ch) "." counter(topic) ".) ";
+        }
+        p{ width: 200px;
+             background-color: yellow;
+            margin-left: 40px;
+        }
+        p::before{
+            counter-increment: subT;
+            content: counter(ch) "." counter(topic) "." counter(subT) " ) ";
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>HTML</h2>
+            <h4>Header tag</h4>
+                <p>h1 tag</p>
+                <p>h2 tag</p>
+                <p>h3 tag</p>
+                <p>h4 tag</p>
+            <h4>Format tags</h4>
+                <p>Paragraph tag</p>
+                <p>Bold tag</p>
+                <p>Underline tag</p>
+            <h4>Table</h4>
+            <h4>List</h4>
+                <p>Un order list</p>
+                <p>Order list </p>
+                <p>Definition list</p>
+            <h4>Form tags</h4>
+    <h2>CSS</h2>
+        <h4>Colors</h4>
+            <p>hex code</p>
+            <p>color name</p>
+            <p>rbg function</p>
+            <p>rbga funtion</p>
+        <h4>Background</h4>
+        <h4>Font</h4>
+            <p>font family</p>
+            <p>font size</p>
+            <p>font weight</p>
+    <h2>JavaScript</h2>
+         <h4>Variables</h4>
+            <p>Var</p>
+            <p>let</p>
+            <p>Const</p>
+        <h4>Operators</h4>
+        <h4>Conditional and looping</h4>
+            <p>if</p>
+            <p>if-else</p>
+            <p>if ,if-else,and else</p>
+            <p>switch</p>
+        <h4>Arrays</h4>
+    <h2>Jquery</h2>
+    <h2>Bootstrap 5</h2>   
+
+    </div>
+</body>
+</html>

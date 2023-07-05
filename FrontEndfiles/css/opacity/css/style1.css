@@ -14,19 +14,20 @@ header {
 }
 header a{
     text-decoration: none;
-    padding: 0 20px;
+    padding: 20px;
     color: #222;
     font-size: 1.2em;
     font-weight: bold;
-    transition: all 0.8ms;
+    transition: all 0.8s;
 }
 nav{
     transition: all 0.8s;
 }
-nav:hover a{
+ nav:hover a{
     opacity: 0.2;
-    filter: blur(2px);
+    filter: blur(1px);
 }
+
 nav a:hover{
     opacity: 1;
     filter: blur(0px);
