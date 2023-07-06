@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            transition: all 2s;
+        }
+
+        .b1{background-color: rgb(15, 136, 241);}
+        .b2{background-color: rgb(6, 71, 71);}
+        .b3{background-color: rgb(5, 221, 102);}
+
+        .b1:hover{
+            transform: scale(2,2.5);
+            background-color: rgb(252, 252, 13);
+        }
+        .b2:hover{
+            transform: scaleX(3);
+            background-color: rgb(209, 18, 18);
+        }
+        .b3:hover{transform: scaleY(2.4);
+        background-color: rgb(26, 26, 88);}
+    </style>
+</head>
+<body>
+    <h1>scale(x,y)</h1>
+    <div class="b1">
+        <p>Content here</p>
+    </div>
+    <div class="b2"></div>
+    <div class="b3"></div>
+</body>
+</html>
