@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        
+        <div class="gst-box">
+            <h3>GST Calculation</h3>
+            <form action="">
+                <label for="price">Price:
+                <input type="number" id="price" >
+                </label>
+                <label for="gst">GST
+               <select  id="gst" onchange="Total()">
+                <option value="">Chose GST%</option>
+                <option value="0.03">3%</option>
+                <option value="0.05">5%</option>
+                <option value="0.08">8%</option>
+                <option value="0.12">12%</option>
+                <option value="0.18">18%</option>
+                <option value="0.28">28%</option>
+               </select>
+            </label>
+            <input type="text" id="result">
+            </form>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

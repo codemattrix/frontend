@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            transition: all 2s;
+        }
+        .b1{background-color: rgb(5, 104, 104);}
+        .b2{background-color: rgb(18, 241, 167);}
+        .b3{background-color: rgb(238, 137, 14);}
+        .b1:hover{
+            transform: skew(60deg);
+            background-color: orange;
+        }
+        
+        .b2:hover{transform: skewX(40deg);
+             background-color: blue;}
+
+        .b3:hover{transform: skewY(40deg);
+            background-color: brown;}
+    </style>
+</head>
+<body>
+    <h1>skew(deg)</h1>
+    <div class="b1"></div>
+    <div class="b2"></div>
+    <div class="b3"></div>
+</body>
+</html>
