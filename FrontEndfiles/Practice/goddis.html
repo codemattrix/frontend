@@ -6,23 +6,64 @@
     <title>Document</title>
     <style>
         .container{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            
+         border: 6px solid brown;
+         width: 210px;
+         height: 300px; 
+         margin: 100px auto;
+         box-shadow: 0 10px 10px black;
+         overflow: hidden;
+         position: relative;
+        
         }
         .container img{
-            width: 300px;
-            height: 300px;
-            border: 10px  solid brown;
-            justify-content: center;
-            text-align: center;
+            width: inherit;
+            height: inherit;
+            transition: all 0.8s;
+            filter: grayscale(100%);
         }
-    </style>
+        .container:hover img{
+            transform: scale(1.5,1.5);
+            filter: grayscale(0%);
+        }
+        .content-left{
+            background-image: url("./image/doors.jpg");
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: perspective(400px) rotateY(0deg);
+            transform-origin: left;
+            cursor: pointer;
+            
+        }
+        .container:hover .content-left{
+            transform: perspective(400px) rotateY(80deg);
+            transition: all 2s;
+        }
+        .content-right{
+            background-image: url("./image/doors.jpg");
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: perspective(400px) rotateY(0deg);
+            transform-origin: right;
+            cursor: pointer;
+        }
+        .container:hover .content-right{
+            transform: perspective(400px) rotateY(-80deg);
+            transition: all 2s;}
+
+        </style>
 </head>
 <body>
     <div class="container">
         <img src="./image/desktop-wallpaper-vishnu-art-neon-art-god-digital-art (1).jpg">
+        <div class="content-left"></div>
+        <div class="content-right"></div>
     </div>
+    
 </body>
 </html>

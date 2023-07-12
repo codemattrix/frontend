@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: gray;
+    font-family: sans-serif;
+}
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(22, 105, 105,0.4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container{
+    width: 102px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+}
+.container img{
+    width: inherit;
+    height: inherit;
+    box-sizing: border-box;
+    transform: translateX(50%);
+}
+.container:hover img{
+    transform:translate(0%);
+}
+.container .content-flag{
+position: absolute;
+top: 0;
+left: 0;
+width: 50%;
+height: 100%;
+box-sizing: border-box;
+
+}
+.container:hover img{
+    /* background-image: url("../image/stock-vector-tri-color-national-flag-design-for-th-of-august-india-independence-day-celebration-2011584782.jpg"); */
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: perspective(400px) translateX(100px);
+    transform-origin: left;
+    cursor: pointer;
+}
+/* .container img:hover{
+    transform: perspective(400px) translateY(100px);
+    transition: all 2s;
+} */
+header ul{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    right: 50px;
+}
+header ul li{
+    display: inline-block;
+}
+header ul li a{
+    text-decoration: none;
+    padding: 10px 10px;
+    background-color: wheat;
+    color: black;
+    margin: 10px;
+}
+
+section{
+   max-width: 1400px;
+    height: 100vh;
+    scroll-margin: 100px;
+}
+#home{
+    background-color: rgba(151, 100, 37,.5);
+}
+#about{
+    background-color: aqua;
+}
+#content{
+    background-color: brown;
+}
+#contact{
+    background-color: chocolate;
+}
