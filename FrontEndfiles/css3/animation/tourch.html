@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            box-sizing: border-box;
+        }
+        .container{
+            margin:100px auto;
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            box-shadow: 2px 5px 5px black;
+            background-color: gray;
+        }
+        .content-big{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 1px solid brown;
+            justify-content: center;
+            margin: 35px 40px;
+            position: relative;
+        }
+        .content-small{
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            border: 1px solid brown;
+            justify-content: center;
+           position: absolute;
+           left: 30%;
+           right: 25%;
+           top: 28%;
+           bottom: 25%;
+        }
+        .container:hover .content-big{
+            animation: anim1 2s Steps(6) 1s infinite normal none;
+        }
+        @keyframes anim1{
+            0%{
+                transform: scale(0.2);
+                background-color: rgb(148, 92, 20)
+            }
+            20%{
+                transform: scale(0.4);
+                background-color: rgb(226, 163, 81)
+            }
+            40%{
+                transform: scale(0.6);
+                background-color: rgb(180, 117, 35)
+            
+            }
+            60%{
+                transform: scale(0.8);
+                background-color: rgb(112, 101, 86)
+    
+            }
+            80%{
+                transform: scale(1);
+                background-color: rgb(223, 190, 148)
+                
+            }
+            100%{
+                transform: scale(1.2);
+                background-color: antiquewhite;
+            }
+            }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="content-big">
+            <div class="content-small"></div>
+        </div>
+    </main>
+</body>
+</html>
