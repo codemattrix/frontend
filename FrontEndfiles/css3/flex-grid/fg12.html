@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: grid;
+            grid-template-areas: "head head" "mBody side" "foot foot";
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+            grid-template-rows: 80px 1fr 80px;
+            grid-template-columns: 1fr 10%;
+        }
+
+         header,footer,aside,article{
+            background-color: rgb(82, 184, 23);
+            text-align: center;
+        }
+        #head{grid-area: head;}
+        #mBody{grid-area: mBody;}
+        #side{grid-area: side;}
+        #foot{grid-area: foot;}
+    </style>
+</head>
+<body>
+    <header id="head">
+        <h1>Header</h1>
+    </header>
+    <article id="mBody">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae repudiandae ullam ipsum, maiores eligendi saepe beatae porro asperiores debitis placeat inventore quisquam, fuga tenetur ea. Eligendi officia in eveniet perspiciatis.</p>
+    </article>
+    <aside id="side"><p>sides</p></aside>
+    <footer id="foot">All rights are reserved &copy; 2023</footer>
+</body>
+</html>
