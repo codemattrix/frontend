@@ -7,11 +7,9 @@
 body{
     background-color: #222;
     min-height: 100vh;
-    display: flex;
-    align-self: center;
-    justify-content: center;
+    
 }
-.container{
+ .container{
     position: relative;
     max-width: 100%;
     display: grid;
@@ -21,15 +19,17 @@ body{
     grid-auto-flow: dense;
     grid-gap:15px;
 }
+
 .box .content img{
-    max-width: 50%;
-    position: relative;
+    max-width: 100%;
+    
     margin-bottom: 10px;
+    width: 50%;
 }
 .container .box{
     background: #333;
     padding: 20px;
-    display: grid;
+   
     font-size: 20px;
     place-items:center;
     text-align: center;
@@ -55,7 +55,7 @@ body{
 .container .box:nth-child(5){
     grid-column: span 3;
     grid-row: span 2;
-}
+} 
 
 @media screen and (max-width:991px) {
     .container{
