@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>use switch cases= +,-,/,*,%</h1>
+    <button onclick="Operation()">calculate</button>
+    <script>
+        function Operation(){
+            var key=prompt("enter the operate wh'd you like=+,-,/,*,%");
+            if(key=="-"){
+                alert("first num should be greater than second")
+            }
+            var num1=prompt("enter the first num");
+            var num2=prompt("enter the second num");
+            var x=Number(num1);
+            var y=Number(num2);
+            var res=0;
+            switch(key){
+                case "+":res=x+y;
+                        document.write(`<h1>Addition of 2 nums is:${res}</h1>`);
+                        break;
+                case "-":res=x-y;
+                        document.write(`<h1>subtraction of 2 num is:${res}</h1>`);
+                        break;
+                case "*":res=x*y;
+                        document.write(`<h1>mul of 2 num is:${res}</h1>`);
+                        break;
+                case "/":
+                    if(x>y){
+                        res=x/y;
+                        }else{
+                            res=y/x;
+                        }
+                        document.write(`<h1> division of 2 num is:${res}</h1>`);
+                        break;    
+                case "%":if(x>y){
+                        res=x%y;
+                        }else{
+                            res=y%x;
+                        }
+                        document.write(`<h1> modulation of 2 num is:${res}</h1>`);
+                        break;
+                default:document.write(`<h1>choose Proper operator</h1>`)  
+            }
+        }
+    </script>
+</body>
+</html>

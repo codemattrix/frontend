@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .yes{color: green;}
+        .no{color: red;}
+        .both{color: orange;}
+        .check{color: blue;}
+    </style>
+</head>
+<body>
+    <script>
+        var x=prompt("enter a num");
+        var a=Number(x);
+        if(a===123){
+            document.write(`<h1 class="yes"> the given num is equal to 123</h1>`);
+        }else if(a > 123){
+            document.write(`<h1 class="no">the given num is greater than 123</h1>`);
+        }else if(a < 123){
+            document.write(`<h1 class="both"> the given num is lesser than 123</h1>`);
+        }else{
+            document.write(`<h1 class="check">check the given num</h1>`);
+        }
+    </script>
+</body>
+</html>
