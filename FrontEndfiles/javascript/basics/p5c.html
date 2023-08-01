@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Enter the day num</h1>
+    <form onsubmit="submitHand(event)">
+        <div>
+            <label for="marks">Enter the day num</label>
+            <input type="number" name="marks" id="marks" required>
+        </div>
+        <div>
+            <input type="submit" value="submit">
+        </div>
+
+        <script>
+            function submitHand(event){
+                var res=document.getElementById('marks');
+                var result=Number(res.value);
+
+                // by if else condition
+                if(result===0){
+                    document.write(`<h1>sunday</h1>`);
+                }else if(result===1){
+                    document.write(`<h1>Monday</h1>`);
+                }else if(result===2){
+                    document.write(`<h1>Tuesday</h1>`);
+                }else if(result===3){
+                    document.write(`<h1>wednesday</h1>`); 
+                }else if(result===4){
+                    document.write(`<h1>Thursday</h1>`);
+                }else if(result===5){
+                    document.write(`<h1>Friday</h1>`);
+                }else if(result===6){
+                    document.write(`<h1>Saturday</h1>`);
+                }else{
+                    document.write(`<h1>enter proper input</h1>`);
+                }
+
+                // by using switch case
+
+                switch(result){
+                    case 0:document.write(`<h1>sunday</h1>`);
+                            break;
+                    case 1:document.write(`<h1>Monday</h1>`);
+                        break;
+                    case 2:document.write(`<h1>Tuesday</h1>`);
+                        break;
+                    case 3:document.write(`<h1>wednesday</h1>`);
+                        break;
+                    case 4:document.write(`<h1>Thursday</h1>`);
+                        break;
+                    case 5:document.write(`<h1>Friday</h1>`);
+                        break;
+                    case 6:document.write(`<h1>Saturday</h1>`);
+                        break;
+                        default:document.write(`<h1>enter proper input</h1>`);
+                }
+            }
+        </script>
+    </form>
+</body>
+</html>

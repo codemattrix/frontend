@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Datatype conversion</h2>
+    <script>
+        var x=prompt("enter the num to parseInt:");
+        var y=prompt("enter the num to parseFloat:");
+        var a=Number(x);
+        document.write(`<h1>the Number of num:${a}</h1>`);
+        var b=parseInt(x);
+        document.write(`<h1>the parse Int of a num is:${b}</h1>`);
+        var c=parseFloat(y);
+        document.write(`<h1>the parse float of a num:${c}</h1>`);
+        document.write(`<h1> with fixed float num:${c.toFixed(2)}</h1>`);
+    </script>
+</body>
+</html>

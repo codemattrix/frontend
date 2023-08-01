@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var pro=prompt('enter your time in 24 hr manner');
+        var pro1=Number(pro);
+        
+        if (pro1>0 && pro1<=11)
+        {
+            document.write(`<h1>Hi good morning</h1>`);
+        }else if(pro1>=12 && pro1<=17)
+        {
+            document.write(`<h1>hi good after noon</h1>`);
+        }else if(pro1>17 && pro1<=23){
+            document.write(`<h1>hi good evening</h1>`);
+        }else{
+            document.write(`<h1>give the proper input</h1>`);
+        }
+    </script>
+</body>
+</html>

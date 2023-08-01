@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Function</h1>
+    <script>
+        
+        function display(name){
+            document.write(`<h1> welcome to JS=${name}`);
+        }
+        display("Ravish");
+        display();
+        display("");
+        display(null);
+
+
+         function product(x,y){
+            document.write(`<h1>product of num=${x*y} </h1>`);
+        }
+        product(12,12);
+
+
+        //a^2+b^2===(a+b)^2-2ab
+
+        function exp(a,b){
+            var res=(a*a)+(b*b);
+            document.write(`<h1>value of the number =${res}`);
+        }
+        exp(2,3);
+        exp(12,13);
+
+        function exp1(a,b,c){
+            //a^2+b^2+c^2
+            var res1=(a+b+c)*(a+b+c)-(2*a*b+2*b*c+2*c*a);
+            document.write(`<h1>value of the number=${res1}</h1>`);
+        }
+        exp1(2,3,4);
+
+
+        
+    </script>
+</body>
+</html>

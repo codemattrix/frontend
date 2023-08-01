@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>area of the circle</h1>
+    <form action="" onsubmit="submitHandler(event)" method="post">
+    <div class="form-gp">
+        <label for="in1">Radius</label>
+        <input type="number" id="in1" name="in1" required>
+    </div>
+    <div class="form-gp">
+        <input type="submit" value="calculate" class="btn">
+        <input type="reset" value="clear">
+    </div>
+    </form>
+    <div id="result"></div>
+
+    <script>
+
+        var in1=document.getElementById('in1');
+        var res=document.getElementById('result');
+
+        function submitHandler(event){
+            event.preventDefault();
+      
+        var x=Number(in1.value);
+        var res1=3.14*(x*x);
+       
+        res.innerHTML=`<h1>Area of circle is:${res1}</h1>`;
+    }
+    </script>
+</body>
+</html>

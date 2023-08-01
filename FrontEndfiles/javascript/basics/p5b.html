@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>marks =70-100(A) 50-70(B)</h1>
+    <form onsubmit="submitHand(event)">
+    <div>
+        <label for="marks">enter the marks</label>
+        <input type="number" name="marks" id="marks" required>
+    </div>
+    <div>
+        <input type="submit" value="submit">
+    </div>
+    </form>
+    <script>
+        function submitHand(event){
+            var input=document.getElementById('marks');
+            var result=Number(input.value);
+        if(result >=70 && result <=100){
+            document.write(`<h1>Grade will be A</h1>`);
+        }else if(result >=50 && result < 70){
+            document.write(`<h1>Grade will be B</h1>`)
+        }else if(result>35 && result<50){
+            document.write(`<h1>Grade will be C</h1>`)
+        }else{
+            document.write(`<h1>Fail</h1>`)
+        }
+    }
+    </script>
+</body>
+</html>

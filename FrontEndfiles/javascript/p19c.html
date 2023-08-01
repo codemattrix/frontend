@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Remainder of 2 nums</h1>
+    <button onclick="submitHander()">click to calculate</button>
+    <div id="result"></div>
+    <script>
+        function submitHander(){
+            let x=window.prompt('enter the first num:');
+            let y=prompt('enter the second num:');
+            let a=Number(x);
+            let b=Number(y);
+            let res=a%b;
+            document.getElementById('result').innerHTML=`<h1> the module of the given num is:${res}</h1>`;
+        }
+    </script>
+</body>
+</html>

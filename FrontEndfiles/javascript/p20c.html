@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>NaN -> Not a number</h2>
+    <script>
+        var a=prompt("enter the num to display is a num or not:");
+        document.write(`<h2>${a}</h2>`);
+        document.write(`<h2>${Number(a)}</h2>`);
+        document.write(`<h2>${parseInt(a)}</h2>`);
+
+        document.write(`<h2>${isNaN(123)}</h2>`);
+        document.write(`<h2>${isNaN("123a")}</h2>`);
+        document.write(`<h2>${isNaN(" ")}</h2>`);
+        document.write(`<h2>${isNaN("2021/2/3")}</h2>`);
+        document.write(`<h2>${isNaN(0/0)}</h2>`);
+    </script>
+</body>
+</html>

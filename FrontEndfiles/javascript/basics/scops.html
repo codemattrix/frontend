@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        if(15>12){
+        var a=155;//it access can be global
+        let x=15; //it can access only in local or block
+        const y=55;//it can be access only in local
+        document.write(`<h1>this is local values  a =value:${a}, x =value:${x}, y =value:${y}`);
+    }
+    document.write(`<h1>this is global values   a =value:${a},,, here we can't access the x and y value`);
+    </script>
+</body>
+</html>

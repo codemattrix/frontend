@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var pro=prompt("enter the number to display day");
+        var today=new Date().getDay();
+        var today1=String(today);
+        switch(today1){
+            case "0":document.write(`<h1>Welcome to Sunday</h1>`);
+                        break;
+            case "1":document.write(`<h1>Welcome to Monday</h1>`);
+                        break;
+            case "2":document.write(`<h1>Welcome to Tuesday</h1>`);
+                        break;
+            case "3":document.write(`<h1>Welcome to Wednesday</h1>`);
+                        break;
+            case "4":document.write(`<h1>Welcome to Thursday</h1>`);
+                        break;
+             case "5":document.write(`<h1>Welcome to Friday</h1>`);
+                        break;
+            case "6":document.write(`<h1>Welcome to Saturday</h1>`);
+                        break;
+        }
+    </script>
+</body>
+</html>

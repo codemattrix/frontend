@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        form{
+            width: 400px;
+            height: 300px;
+            margin-top: 100px;
+            background-image: linear-gradient(to right,red,black);
+            border-radius: 10px;
+        }
+        div{
+           
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        #result{
+            color: rgb(19, 15, 15);
+        }
+        form button{
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content:end;
+            margin-left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+    use conditional to switch=add,sub,mul,div,rem  a and b
+    </h1>
+
+    <form onsubmit="codeHandler(event)">
+    <div>
+        <label for="op">Choose an operation</label>
+        <select name="op" id="op">
+            <option value="">Choose Option</option>
+            <option value="add">addition</option>
+            <option value="sub">Subtraction</option>
+            <option value="mul">Multiplication</option>
+            <option value="div">division</option>
+            <option value="rem">module</option>
+        </select>
+    </div>
+    <div>
+        <label for="inpA">Enter Input a?</label>
+        <input type="number" name="inpA" id="inpA" required>
+    </div>
+
+    <div>
+        <label for="inpB">Enter Input b?</label>
+        <input type="number" name="inpB" id="inpB" required>
+    </div>
+    <button type="submit"> Execute Code</button>
+    </form>
+    <div id="result"></div>
+    <script>
+        function codeHandler(event){
+            event.preventDefault(); //avoid page refresh
+
+            var key=document.getElementById('op').value;
+            var a=document.getElementById('inpA').value;
+            var b=document.getElementById('inpB').value;
+            //constructor  = Number, boolean, String, array,Object
+
+            var x=Number(a);
+            var y=Number(b);
+            var res=0;
+         if(key ==="add"){
+            res=x+y;
+             document.title=`Add =${res}`;
+            document.getElementById('result').innerHTML=`<h1> Addition of 2 num =${res} </h1>`;
+         }
+         else if(key ==="sub")
+         {
+            res=x-y;
+            document.title=`Sub=${res}`;
+            document.getElementById('result').innerHTML=`<h1> Subtraction of 2 num =${res} </h1>`;
+         }
+         else if(key ==="mul"){
+            res=x*y;
+            document.title=`Mul=${res}`;
+            document.getElementById('result').innerHTML=`<h1> Multiplication of 2 num =${res} </h1>`;
+         }else if(key ==="div"){
+            if(x > y){
+                res= x / y;
+            }else{
+                res= y / x;
+            }
+            document.title=`Div=${res}`;
+            document.getElementById('result').innerHTML=`<h1> Division of 2 num =${res} </h1>`;
+         }else if(key ==="rem"){
+            if(x > y){
+                res=x % y;
+            }else{
+                res=y % x;
+            }
+            document.title=`Rem=${res}`;
+            document.getElementById('result').innerHTML=`<h1> modulo of 2 num =${res} </h1>`;
+         }
+         else{
+            document.title=`Choose proper Input`;
+            document.getElementById('result').innerHTML=`<h1> Choose proper Input </h1>`;
+         }
+        
+        }
+
+    </script>
+</body>
+</html>

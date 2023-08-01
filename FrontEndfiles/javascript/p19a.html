@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body{
+            width:100vw;
+            height: 100vh;
+            background-color: gray;
+
+        }
+        form{
+            width: 500px;
+            display: flex;
+            border: 1px solid #222;
+            flex-direction: column;
+            padding: 20px;
+            margin: auto;
+        }
+        form .form-group{
+            margin: 4px;
+        }
+        .form-group input{
+            padding: 12px 14px;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        #result{
+            width: 500px;
+            background-color: orangered;
+            margin: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Rem of 2 nums</h1>
+    <form action="" onsubmit="submitHandler(event)" name="myForm" method="post">
+    <div class="form-group">
+        <label for="in1">Enter first num:</label>
+        <input type="number" name="in1" id="in1" required>
+    </div>
+    <div class="form-group">
+        <label for="in2">Enter second num:</label>
+        <input type="number" name="in2" id="in2" required>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="calculate" class="btn">
+        <input type="reset" value="clear">
+    </div>
+    </form>
+    <div id="result"></div>
+
+    <script>
+        var in1=document.getElementById("in1");
+        var in2=document.getElementById("in2");
+        var res=document.getElementById("result");
+
+        function submitHandler(event){
+            event.preventDefault();
+        var x=Number(in1.value);
+        var y=Number(in2.value);
+        var out=x*y;
+        res.innerHTML=`<h1>Result=${out}</h1>`;
+        //res.inner.Text=`Product=${out}`;
+    }
+    </script>
+</body>
+</html>
