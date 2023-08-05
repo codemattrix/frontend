@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=new Array();
+        a[0]='blue';
+        a[1]='red';
+        a[2]='green';
+        a[3]='white';
+        a[4]='brown';
+
+        document.write(`<h1>${a[0]}</h1>`);
+        document.write(`<h1>${a}</h1>`);
+
+
+        a.forEach(function(value,index){
+            document.write(`<h1 style="color:red">${value}  </h1>`);
+        })
+    </script>
+</body>
+</html>

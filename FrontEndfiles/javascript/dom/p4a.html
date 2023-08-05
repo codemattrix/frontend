@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{
+            width:100%;
+            overflow-x: hidden;
+            height: auto;
+            margin: 0;
+        }
+        #UserInfo{
+            padding: 10px;
+            border: 2px solid #222;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+            grid-gap:5px;
+        }
+        #UserInfo div{
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
+            text-align: center;
+            padding: 10px;
+        }
+        #UserInfo div img{
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+            width: 200px;
+        }
+
+        /* #UserInfo div {
+            padding: 12px 14px;
+            background-color: slateblue;
+            color: #fff;
+            text-transform: capitalize;
+            text-decoration: none;
+        } */
+    </style>
+</head>
+<body>
+    <section id="UserInfo"></section>
+    <script>
+        var users=[
+            {
+                id:1,
+                title:"I PHONE 9",
+                description:"An apple mobile which is nothing like apple",
+                price:549,
+                discountPercentage:12.96,
+                rating:4.69,
+                stock:94,
+                brand:"Apple",
+                category:"smartphones",
+                thumbnail:"https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+            },
+            {
+                id:2,
+                title:"iPhone X",
+                description:"An apple mobile which is nothing like apple",
+                price:899,
+                discountPercentage:12.96,
+                rating:4.69,
+                stock:94,
+                brand:"Apple",
+                category:"smartphones",
+                thumbnail:"https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+            },
+            {
+                id:3,
+                title:"Samsung Universe 9",
+                description:"An apple mobile which is nothing like apple",
+                price:1249,
+                discountPercentage:12.96,
+                rating:4.69,
+                stock:94,
+                brand:"Apple",
+                category:"smartphones",
+                thumbnail:"https://i.dummyjson.com/data/products/3/thumbnail.jpg"
+            }
+            
+        ];
+
+        console.log(users);
+
+        var container=document.querySelector('#UserInfo');
+        users.forEach(function(val,index){
+            var card=document.createElement('div');
+            var eImage=document.createElement('img');
+            var eTitle=document.createElement('h3');
+            var eDescription=document.createElement('h3');
+            var ePrice=document.createElement('h3');
+            var eDiscountPercentage=document.createElement('h3');
+            var eRating=document.createElement("p");
+            var eStock=document.createElement('h3');
+            var eBrand=document.createElement('p');
+
+            eImage.src=val.thumbnail;
+            eImage.alt="No-image";
+            eTitle.textContent=`${val.id} ${val.title}`;
+            eDescription.textContent=val.description;
+            ePrice.textContent=val.price;
+            eDiscountPercentage.textContent=val.discountPercentage;
+            eRating=val.rating;
+            eStock=val.stock;
+            eBrand=`${val.brand} ${val.category}`;
+
+            card.appendChild(eImage);
+            card.appendChild(eTitle);
+            card.appendChild(eDescription);
+            card.appendChild(ePrice);
+            card.appendChild(eDiscountPercentage);
+            card.appendChild(eRating);
+            card.appendChild(eStock);
+            card.appendChild(eBrand);
+
+            container.appendChild(card);
+        });
+    </script>
+</body>
+</html>
