@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>document.coockie</h2>
+    <h1 id="result"></h1>
+    <button onclick="set()">set Cookie</button>
+    <button onclick="clearHandler()">clear cookie</button>
+    <script>
+        function set(){
+            var x="Be-practical";
+            document.cookie=`userId=${x};expires=8 AUG 2023 12:00:00 AM GMT+5.30`;
+            alert("cookie successfully set");
+            window.location.reload(); /* re-freshing current page */
+        }
+
+        function clearHandler(){
+            if(conform(`Are you sure to clear cookie?`)){
+                let myTime=new Date();
+
+                myTime.setTime(myTime.getTime()-1);
+                console.log('myTime',myTime.toGMTString());
+                document.cookie =`userId=;expires=${myTime.toGMTString()}`;
+                alert(`Cookie cleared successfully`);
+                window.location.reload();
+            }else{
+                console.log('Failed');
+            }
+        }
+    </script>
+</body>
+</html>

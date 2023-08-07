@@ -93,7 +93,7 @@
             var eDescription=document.createElement('h3');
             var ePrice=document.createElement('h3');
             var eDiscountPercentage=document.createElement('h3');
-            var eRating=document.createElement("p");
+            var eRating=document.createElement('p');
             var eStock=document.createElement('h3');
             var eBrand=document.createElement('p');
 
@@ -103,9 +103,9 @@
             eDescription.textContent=val.description;
             ePrice.textContent=val.price;
             eDiscountPercentage.textContent=val.discountPercentage;
-            eRating=val.rating;
-            eStock=val.stock;
-            eBrand=`${val.brand} ${val.category}`;
+            eRating.textContent=val.rating;
+            eStock.textContent=val.stock;
+            eBrand.textContent=`${val.brand} ${val.category}`;
 
             card.appendChild(eImage);
             card.appendChild(eTitle);

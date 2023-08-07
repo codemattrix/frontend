@@ -4,6 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #blk{
+            width: 100vw;
+            height: 400px;
+            background:rgb(90, 147, 233);
+            color: white;
+            padding: 20px;
+            line-height: 1.5rem;
+        }
+    </style>
 </head>
 <body>
     <section id="blk"></section>
@@ -14,13 +29,15 @@
             var content=`<div>
                 <h1>welcome to narayana rudhalaya</h1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor ea amet ipsam exercitationem quasi, saepe impedit repudiandae ut possimus neque, deleniti consequuntur! Natus repellendus eius voluptatem repudiandae officia minima at.</p>
-                <button> onClick="removeContent()">Remove block</button>
+                
+                <button onclick="removeContent()">Remove block</button>
                 </div>`;
                 document.getElementById('blk').innerHTML=content;
+            }
                 function removeContent(){
                     document.getElementById('blk').innerHTML="";
                 }
-        }
+        
     </script>
 </body>
 </html>
