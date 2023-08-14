@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Mouse over</h3>
+    <h3 id="txt" onmouseover="handler()" onmouseout="outhandler()">Over your mouse to show the differences</h3>
+    <script>
+        function handler(){
+            document.getElementById('txt').style.background="lightgray";
+            document.getElementById('txt').style.color="#aaa";
+            document.getElementById('txt').style.padding="20px";
+            document.getElementById('txt').innerText="Mouse pointer is entered";
+
+        }
+        function outhandler(){
+            document.getElementById('txt').style.background="black";
+            document.getElementById('txt').style.color="#fff";
+            document.getElementById('txt').style.padding="20px";
+            document.getElementById('txt').innerText="Mouse pointer is entered";
+        }
+    </script>
+</body>
+</html>

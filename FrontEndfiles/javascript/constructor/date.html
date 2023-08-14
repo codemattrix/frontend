@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Date Constructor</h1>
+    <script>
+        let x=new Date();
+
+        document.write(`<h3>Today's date:${x}</h3>`);
+        document.write(`<h3>Date:${x.getDate()}</h3>`);
+        document.write(`<h3>Day:${x.getDay()}</h3>`);        
+        document.write(`<h3>Month:${x.getMonth()}</h3>`);        
+        document.write(`<h3>Year:${x.getFullYear()}</h3>`);
+        document.write(`<h3>Hour:${x.getHours()}</h3>`);
+        document.write(`<h3>Minutes:${x.getMinutes()}</h3>`);
+        document.write(`<h3>Seconds:${x.getSeconds()}</h3>`);
+        document.write(`<h3>Milliseconds:${x.getMilliseconds()}</h3>`);
+
+
+        document.write(`<h3>Today's date:${x}</h3>`);
+        document.write(`<h3>Date:${x.getUTCDate()}</h3>`);
+
+        
+        switch(x.getDay()){
+            case 0:document.write(`<h2>Today is :Sunday</h2>`);
+            break;
+            case 1:document.write(`<h2>Today is :Monday</h2>`);
+            break;
+            case 2:document.write(`<h2>Today is :Tuesday</h2>`);
+            break;
+            case 3:document.write(`<h2>Today is :Wednesday</h2>`);
+            break;
+            case 4:document.write(`<h2>Today is :Thursday</h2>`);
+            break;
+            case 5:document.write(`<h2>Today is :Friday</h2>`);
+            break;
+            case 6:document.write(`<h2>Today is :Saturday</h2>`);
+            break;
+            default:document.write("pls enter proper input");
+            break;
+        }
+    </script>
+</body>
+</html>

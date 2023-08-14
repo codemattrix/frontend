@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Custom Constructor</h3>
+    <script>
+        function person(){
+            let x=23;
+            this.name="ravish";
+            this.email="ravishnaikkm008@gmail.com"
+            this.getName=function(){
+                return this.name;
+            };
+            this.getEmail=()=>{
+                document.write(`<h1>email = ${this.email}</h1>`);
+
+            };
+        }
+
+        let x=new person();
+        document.write(`<h1>${x.getName()}</h1>`);
+        x.getEmail();
+
+        function user(na,em){
+            this.name=na;
+            this.email=em;
+            this.getname=function(){
+                return this.name;
+            };
+            this.getemail=()=>{
+                document.write(`<h1>email=${this.email}</h1>`)
+            };
+        }
+        let y=new user("anish","anishnayakakm@gmail.com");
+        document.write(`<h1>Name:${y.getname()}</h1>`);
+        y.getemail();
+
+        let xy=new user("rocky","rocky@gmail.com");
+        document.write(`<h1>Name:${xy.getname()}</h1>`);
+        xy.getemail();
+
+
+    </script>  
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #dlck{
+            width: 200px;
+            background-color: orangered;
+            font-size: 28px;
+            font-weight: bold;
+            position: absolute;
+            top: 100px;
+            right: 100px;
+            text-align: center;
+            padding: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>simple digi-clock</h1>
+    <div id="dlck"></div>
+    <script>
+        function digiClock(){
+            var res=new Date();
+            document.getElementById('dlck').innerText=res.toLocaleTimeString();
+        }
+        setInterval(function(){
+            digiClock();
+        },1000);
+    </script>
+</body>
+</html>

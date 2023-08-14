@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            background-color: black;
+            padding: 10px 15px;
+            color: white;
+            font-family: sans-serif;
+            font-weight: 500;
+            font-size: 20px;
+            border-radius: 20px;
+        }
+
+        button:hover{
+            transform: scale(1.2);
+            transition: .3s ease;
+    </style>
+</head>
+<body>
+    <h1 onclick="print()">click me</h1>
+    <button onclick="print()">click me</button>
+    <button ondblclick="print()">double click me</button>
+    <script>
+        function print(){
+            alert("Welcome to Javascript");
+
+        }
+    </script>
+</body>
+</html>

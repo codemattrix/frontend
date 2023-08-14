@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>onmousedown and onmouseup</h3>
+    <div id="blk" onmousedown="downhandler()" onmouseup="uphandler()">onmousedown and onmouseup</div>
+    <script>
+        function downhandler(){
+            document.getElementById('blk').style.background="crimson";
+            document.getElementById('blk').style.padding="20px";
+            
+
+            document.getElementById('blk').innerHTML="<h2>Hi this is Mousedown</h2>";
+
+
+        }
+        function uphandler(){
+            document.getElementById('blk').style.background="gold";
+            document.getElementById('blk').style.padding="20px";
+            
+            document.getElementById('blk').innerHTML="<h2>Hi this is Mousedown</h2>";
+        }
+    </script>
+</body>
+</html>
