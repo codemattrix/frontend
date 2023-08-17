@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .res{
+            font-family: 'poppins',sans-serif;
+            color: #fff;
+            width: 500px;
+            height: 200px;
+            background-color:black ;
+        }
+    </style>
+</head>
+<body>
+    <h3>onchange</h3>
+    <h1 id="output"></h1>
+    <label for="">choose lang</label>
+    <select name="lang" id="lang" onchange="selhandler()">
+        <option value="null">Choose lang</option>
+        <option value="Ka">Kannada</option>
+        <option value="En">English</option>
+        <option value="Hi">Hindi</option>
+        <option >Telugu</option>
+    </select>
+    <script>
+        function selhandler(){
+            let lang=document.getElementById("lang").value;
+            if(lang===null){
+                document.getElementById("output").innerText="no value selected";
+
+            }else{
+                document.getElementById("output").innerHTML=`<span class="res">you have selected: ${lang}</sp>`;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="out"></h3>
+    <form action="" method="post" onsubmit="subhandler(event)" onreset="resethandler()">
+    <label for="">Username</label>
+    <input type="text" name="user" id="user">
+    <br><br>
+    <label for="">Password</label>
+    <input type="password" name="pass" id="pass">
+    <input type="checkbox" name="showpass" id="showpass"><span id="txt">Show password</span>
+    <br><br>
+
+    <button type="submit">Login</button>
+    <input type="reset" value="Reset">
+</form>
+
+<script>
+    function subhandler(e){
+        e.preventDefault();
+        let user=document.getElementById("user").value;
+        let pass=document.getElementById("pass").value;
+
+        document.getElementById("out").innerText=`username=${user} and password is=${pass}`;
+    }
+    function resethandler(){
+        alert("form input is cleared");
+        Window.location.reload();
+    }
+
+    //script to hide and display pass
+    document.getElementById("showpass").addEventListener('click',function (){
+        const pa=document.getElementById('pass');
+        if(pa.type==="password"){
+            pa.type="text";
+            document.getElementById("txt").innerText="Hide Password";
+
+        }else{
+            pa.type="password";
+            document.getElementById("txt").innerText="Show Password";
+        }
+    });
+
+</script>
+</body>
+</html>

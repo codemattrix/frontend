@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            background-color: gray;
+            color: black;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>splicing</h1>
+    <script>
+        var arry=["12","A","B","C"];
+        document.write(`<h3><span>${arry}</span></h3>`);
+        arry.splice(2,0,"13","14","15");
+        document.write(`<h3><span>${arry}</span></h3>`);
+        arry.splice(3,2,"D","E","F");
+        document.write(`<h3><span>${arry}</span></h3>`);
+        arry.splice(5,2);
+        document.write(`<h3><span>${arry}</span></h3>`);
+
+    </script>
+</body>
+</html>

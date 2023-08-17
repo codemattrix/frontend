@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+        
+            background-color: rgb(37, 58, 17);
+            color: white;
+            font-weight: 700;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>unshift and shift</h1>
+
+    <script>
+        var arry=["ravi","surya"];
+
+        document.write(`<h4> original data :<span> ${arry}</span></h4>`);
+        arry.unshift("rohan");
+        document.write(`<h4> after first unshift data will be :<span>${arry}</span></h4>`);
+        arry.unshift("mohan");
+        document.write(`<h4>after second unshift data will be :<span>${arry}</span></h4>`);
+        arry.shift();
+        document.write(`<h4> after first shift data will be :<span>${arry}</span></h4>`);
+        arry.shift();
+        document.write(`<h4>after second shift data will be :<span>${arry}</span></h4>`);
+    </script>
+</body>
+</html>

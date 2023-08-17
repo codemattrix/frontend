@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>filter</h2>
+   <script> var user=[
+    {
+        id:1,
+        first:"ravish",
+        last:"nayaka",
+        email:"ravishnaikkm008@gmail.com"
+    },
+    {
+        id:2,
+        first:"anish",
+        last:"nayaka",
+        email:"anishnayaka@gmail.com"
+    },
+    {
+        id:3,
+        first:"ambuja",
+        last:"maha",
+        email:"ambuja@gmail,com"
+    },
+    {
+        id:4,
+        first:"ravish",
+        last:"nayaka",
+        email:"ravishnaikkm008@gmail.com"
+    }];
+
+    console.log('output=',user);
+    var user1=user.filter(function(item){
+        return item.first==="ravish";
+    });
+    console.log('output=',user1);
+
+    var user2=user.find(function(item){
+        return item.id===3;
+    });
+
+    console.log('output=',user2);
+    </script>
+</body>
+</html>

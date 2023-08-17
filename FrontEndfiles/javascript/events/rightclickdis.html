@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+            background-color: #ccc;
+        }
+        .blk{
+            width: 50%;
+            background-color: crimson;
+            color: #fff;
+            padding: 12px;
+        }
+    </style>
+</head>
+<body oncontextmenu="contexthandler(event)">
+    <h3>oncontextmenu()</h3>
+    <div class="blk" id="blk">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae recusandae reprehenderit, in repellat unde ullam, facilis beatae, dicta illum voluptatem amet quam accusantium. Minus dolore iste consequatur fuga fugiat temporibus.
+        Architecto harum eum asperiores totam quos rem ullam ratione cumque voluptas veritatis temporibus odit, natus earum corrupti, distinctio alias unde dolorum ipsam sint voluptatum dolore, doloribus quas animi! Velit, asperiores?
+        Aliquam laborum et maxime, eius corrupti beatae maiores sed repellat facere impedit, quo iste. Illo, aspernatur explicabo? Exercitationem dolore accusamus aliquid incidunt perspiciatis pariatur. Delectus quia omnis expedita tenetur a.
+        Accusantium, cumque modi autem placeat ducimus dignissimos consequuntur harum, ipsum in maxime minima pariatur reprehenderit assumenda mollitia! Ullam eos veniam velit architecto minus odio doloribus iusto. Aut itaque ullam ab?
+        Deserunt, suscipit voluptate laboriosam maiores quisquam eaque in tenetur reiciendis ad porro eos voluptatum voluptatem molestiae, saepe vitae beatae molestias earum aspernatur, doloribus quas commodi fugiat. Officiis in odio sit.
+        Sed asperiores excepturi et eius porro culpa eligendi nemo nam, voluptate placeat corporis. Fugit veritatis nam unde ipsam, placeat quasi, mollitia autem necessitatibus, rerum et officia culpa ipsa voluptatum dolorem.
+        Facilis perspiciatis error dolores quo accusamus mollitia, deserunt illum architecto beatae doloribus, omnis esse consequatur in autem id dolor dignissimos ratione, nihil a praesentium nemo natus! Aut excepturi autem et.
+        Ea ipsa perferendis velit voluptate libero ducimus dignissimos dolorum voluptates architecto debitis possimus alias quae aspernatur tempore unde aut, placeat, eligendi dolor odit. Quae illo obcaecati dignissimos, aliquam error inventore?
+        Omnis dolorem, illo, sunt repellendus deserunt nihil officiis quisquam sint laborum quaerat in aperiam natus minus necessitatibus soluta ducimus ipsum. Fugit maxime blanditiis dignissimos id distinctio nesciunt possimus nemo itaque.
+        Itaque corrupti ea quas consectetur, quaerat, ad provident in enim, cum quod officiis asperiores? Laborum doloremque repellendus nobis ex, voluptatibus minima magnam et impedit cum debitis reprehenderit nisi maiores veniam.</p>
+    </div>
+    <script>
+        function contexthandler(){
+            event.preventDefault();
+            alert('right click disabled');
+        }
+    </script>
+</body>
+</html>
