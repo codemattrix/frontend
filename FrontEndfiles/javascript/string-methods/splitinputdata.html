@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            
+        }
+        form div{
+           
+            width: 300px;
+            margin: 10px auto;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>split</h1>
+    <form action="" autocomplete="off" onsubmit="submithandler()">
+    <div>
+        <label for="user">enter names (each name should seperate by comma(,))</label>
+        <textarea name="user" id="user" cols="30" rows="5"></textarea>
+    </div>
+    <div>
+        <input type="submit" value="submit">
+    </div>
+    </form>
+    <script>
+        function submithandler(e){
+            e.preventDefault();
+            var user=document.getElementById("user").value;
+            console.log('user data=',user);
+            var res=user.split(",");
+            console.log('output=',res);
+        }
+    </script>
+</body>
+</html>
