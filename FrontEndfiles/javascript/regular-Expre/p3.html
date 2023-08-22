@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>exec()</h1>
+    <p>it returns an array of captures. ot null if there is no match</p>
+    <script>
+        var re=/a/g;
+        var res;
+        console.log('input is=','aba baba');
+        while((res=re.exec('aba baba'))!==null){
+            console.log('re=',re);
+            console.log(`found :'${res[0]}',  next exec stats at '${re.lastIndex}'`);
+        }
+
+        var re1=/that/gi;
+        var inpu="Hi this is rawwvish from be-practical that is to high for see that could be a That is THAT ";
+        var resu;
+        while((resu=re1.exec(inpu))!==null){
+            console.log('re1=',re1);
+            console.log(`found :"${resu[0]}",next exec stats at'${re1.lastIndex}'`);
+        }
+    </script>
+</body>
+</html>
