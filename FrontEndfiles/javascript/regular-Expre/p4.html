@@ -11,6 +11,13 @@
         var str="helloworld";
         var res=/[e-l]+/;
         console.log('match=',str.match(res));
+        //replace
+        console.log(`replace=,${str.replace(res,"test")}`);
+        //split
+        var str1="stringstring";
+        console.log(`split:${str1.split(res)}`);
+        //serach
+        console.log(`search:${str1.search(res)}`);
     </script>
 </body>
 </html>

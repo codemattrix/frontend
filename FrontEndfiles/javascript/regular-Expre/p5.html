@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>split</h1>
+    <script>
+
+        //^ ->define the begining 
+        //$ ->ending 
+        //[] ->charector set
+        //() ->capturing group that of multiple charector
+        //[abcdef] ->matches any single occurence of  any of the charector a,b,c,d,e,f
+        //[a-z][A-Z] ->matches any single lowercase letter and upper
+        //[a-zA-Z] ->matches any single letter from a-z ignoring the case
+        // . ->matches any charecter axcept line break /n
+        //? ->matches 
+        var str="how is everything going?";
+        var str1="how is $everything g$oing?";
+        const re=" ";
+        var reg=/\$e|\$o/;
+        console.log(`${str.split(re)}`);
+        console.log(`${str1.split(reg)}`);
+    </script>
+</body>
+</html>

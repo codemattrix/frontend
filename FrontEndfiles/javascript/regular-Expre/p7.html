@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>string replace using regular exp</h1>
+    <script>
+        let regex=/apples/g;
+        let regexexp=/apples/gi;
+        let regexfi=/apples/i;
+        let str = "Apples are round, and apples are juicy";
+        console.log(`${str.replace(regex,"orange")}`);
+        console.log(`${str.replace(regexexp,"orange")}`);
+        console.log(`${str.replace(regexfi,"orange")}`);
+
+    </script>
+</body>
+</html>
