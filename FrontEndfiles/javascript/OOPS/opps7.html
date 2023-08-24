@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>object methods</h3>
+    <script>
+         const user={
+            name:'ravish',
+            email:'ravish@gmail.com',
+            mobile:'891770816',
+            age:27
+        };
+
+        const user1=Object.create(user);
+       // console.log(user1);
+
+        let emp={
+            bank:'SBI',
+            account:"1234567",
+            total:12342
+        }
+
+       Object.setPrototypeOf(user1,emp);
+        console.log('after set the user1=',user1);
+    </script>
+</body>
+</html>

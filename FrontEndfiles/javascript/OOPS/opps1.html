@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>object</h1>
+    <script>
+        var x=20;
+        var car={
+            model:2022,
+            color:'red',
+            brand:'etios',
+            company:'toyota',
+            isRunnable:true,
+            speed:() =>{
+                return "220kms max speed";
+            }
+        };
+        console.log('car=',car);
+
+        document.write(`<h3> var x=${x}</h3>`);
+        document.write(`<h3> object= ${car} </h3>`);
+        document.write(`<h3> Model= ${car.model} </h3>`);
+        document.write(`<h3> color= ${car.color} </h3>`);
+        document.write(`<h3> brand= ${car["brand"]} </h3>`);
+        document.write(`<h3> speed= ${car.speed()} </h3>`);
+
+    </script>
+</body>
+</html>

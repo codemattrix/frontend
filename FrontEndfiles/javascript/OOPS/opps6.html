@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>objects</h1>
+    <script>
+        const user={
+            name:'ravish',
+            email:'ravish@gmail.com',
+            mobile:'891770816',
+            age:27
+        };
+
+        const user1=Object.create(user);
+        console.log(user1);
+        //it will rebuilt the data original formate
+        let result=Object.getPrototypeOf(user1);
+        console.log('now it is   = ',result);
+    </script>
+</body>
+</html>

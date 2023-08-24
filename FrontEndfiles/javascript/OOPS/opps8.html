@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>object methods =defineProperty(object,key,{value:xyz})</h3>
+    <script>
+        var user={
+            name:'ravish'
+        };
+        //externally passing parameter
+        Object.defineProperty(user,'email',{
+            value:'ravish@gmail.com'
+        });
+        Object.defineProperty(user,'age',{
+            value:27
+        });
+        Object.defineProperty(user,'getName',{value:function(){
+            document.write(`<h2>name=${this.name}</h2>`);
+        }
+    });
+    console.log('user', user);
+    user.getName();
+    </script>
+</body>
+</html>
