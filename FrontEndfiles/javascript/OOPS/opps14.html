@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>object property destructure using loop</h3>
+    <script>
+       var user={
+            name:'ravish',
+            email:'ravish@gmail.com',
+            age:27,
+            mobile:'89517708106'
+        }
+        for(let i in user){
+            document.write(`<h3> ${i}:${user[i]}</h3>`);
+        }
+    </script>
+</body>
+</html>

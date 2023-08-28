@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>
+    object based inheritance  
+   </h1> 
+   <script>
+    var user={
+        name:'ravish',
+        email:'ravish@gmail.com'  
+          };
+          var user1=Object.create(user,{
+            mobile:{
+                value:'8951770816'
+            },
+            age:{
+                value:27
+            }
+          });
+          let user2=Object.create(user1,{
+            course:{
+                value:'java-full-stack-dev'
+            },
+            duration:{
+                value:'6months'
+            }
+          });
+        console.log('user2=',user2);
+        
+   </script>
+</body>
+</html>

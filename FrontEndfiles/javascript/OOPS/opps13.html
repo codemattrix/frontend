@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h3>object.values()</h3>
+    <script>
+        var user={
+            name:'ravish',
+            email:'ravish@gmail.com',
+            age:27,
+            mobile:'89517708106'
+        }
+        console.log(user);
+        console.log('values-',Object.values(user));
+        for(let i of Object.values(user)){
+            document.write(`<h3>${i}</h3>`);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const user={
+            name:'ravish',
+            email:'ravishnaikkm008@gmail.com',
+            mobile:'8951770816',
+            age:27
+        }
+        console.log('objects=',user);
+        console.log('entries=',Object.entries(user));
+         for(let [key,value]  of Object.entries(user)){
+            console.log(`${key}:${value}`);
+            document.write(`<h3>${key}:${value}</h3>`);
+         }
+         </script>
+</body>
+</html>

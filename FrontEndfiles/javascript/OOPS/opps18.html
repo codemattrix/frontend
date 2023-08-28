@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>object inheritance using __proto__</h1>
+    <script>
+        var user={
+            name:'ravish',
+            email:'ravish@gmail.com'
+        };
+        let user1={
+            mobile:'8951770816',
+            age:27,
+            __proto__:user
+        };
+        console.log('user1=',user1);
+        let user2={
+            course:'JS',
+            duration:'6months',
+            __proto__:user1
+        };
+        console.log('user2=',user2);
+    </script>
+</body>
+</html>

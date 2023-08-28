@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>object.freeze</h3>
+    <script>
+        const user={
+            name:'ravish',
+            email:'ravish@gmail.com',
+            age:27
+        };
+        Object.defineProperty(user,'mobile',{
+            value:'8951770816',
+            writable:true
+        });
+        console.log('before user',user);
+        Object.freeze(user);
+        user.name='ravish';
+        user.mobile='8951770816';
+        console.log('user=',user);
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>accesor properties {get and set}</h2>
+    <script>
+        var user={
+            name:'ravish',
+            surname:'nayaka',
+            email:'ravish@gmail.com',
+            age:27
+        };
+        Object.defineProperty(user,'fullname',{
+            get:function(){
+                return this.name +" "+this.surname;
+            },
+            set:function(value){
+                [this.name,this.surname]=value.split(" ");
+
+            }
+        });
+        console.log('fullname',user.fullname);
+        user.surname='kumar';
+        console.log('fullname',user.fullname);
+        user.name='anish';
+        console.log('fullname',user.fullname);
+    </script>
+</body>
+</html>

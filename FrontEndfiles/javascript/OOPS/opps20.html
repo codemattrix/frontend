@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>entries to object conversions</h3>
+    <script>
+        const user=new Map([
+            ['name','ravish'],['email','ravish@gmail.com'],['age',27]
+        ]);
+        console.log('entries',user);
+        const user1=Object.fromEntries(user);
+        console.log('object user1=',user1);
+    </script>
+</body>
+</html>
