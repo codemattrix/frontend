@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>parameterize cunstructor</h1>
+    <script>
+        function user(ui,gi,ri){
+            this.title=ui;
+            this.fee=gi;
+            this.duration=ri;
+        };
+        let x=new user('jS',36000,'6-months');
+        document.write(`<h1>title = ${x.title}</h1>`);
+        document.write(`<h1>fee = ${x.fee}</h1>`);
+        document.write(`<h1>duration = ${x.duration}</h1>`);
+
+        let x1=new user('java-fullstack','36K','6-months');
+        document.write(`<h1>title = ${x1.title}</h1>`);
+        document.write(`<h1>fee = ${x1.fee}</h1>`);
+        document.write(`<h1>duration = ${x1.duration}</h1>`);
+
+    </script>
+</body>
+</html>

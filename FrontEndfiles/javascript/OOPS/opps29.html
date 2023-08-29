@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>finding even and odd num</h1>
+    <form action="" name="myForm" onsubmit="submitHandler(event)">
+    <div class="input">
+        <label for="num">enter number to find it even or odd</label>
+        <input type="number" name="num" id="num" required>
+    </div>
+    <div class="input">
+        <button type="submit" class="btn">submit</button>
+    </div>
+</form>
+<hr>
+<div id="result"></div>
+<script>
+    function submitHandler(event){
+        event.preventDefault();
+        let num=Number(document.getElementById('num').value);
+        let x1=new evenoddnum(num);
+        document.getElementById('result').innerHTML=`<h1>${x1.find()}</h1>`
+    }
+    class evenoddnum{
+        constructor(x){
+            this.num=x;
+        }
+        find(){
+            if(this.num%2===0){
+                return `${this.num} is even `;
+            }else{
+                return `${this.num} is odd`;
+            }
+        }
+    }
+</script>
+</body>
+</html>

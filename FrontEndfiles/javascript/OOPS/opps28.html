@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class sum{
+            constructor(x,y){
+                this.a=x;
+                this.b=y;
+            }
+            calculator(){
+                return this.a + this.b;
+            }
+        }
+        let x=new sum(10,20);
+        let x1=new sum(23.5,24.3);
+        let y=x.calculator();
+        let y1=x1.calculator();
+        document.write(`<h1>sum of nums is :${y}</h1>`);
+        document.write(`<h1>sum of nums is :${y1}</h1>`);
+    </script>
+</body>
+</html>
