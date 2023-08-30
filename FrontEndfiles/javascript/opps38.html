@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>private member inside the class</h1>
+    <script>
+        class Company{
+            constructor(){
+                const emp=[];
+                this.addemp=function(val){
+                    emp.push(val);
+                    return emp;
+                }
+                this.getemp=function(){
+                    return emp.shift();
+                }
+            }
+        }
+        let x=new Company();
+        x.addemp('ravi');
+        x.addemp('ravish');
+        x.addemp('anish');
+        x.addemp('john');
+        console.log('total of array is',x.addemp());
+        console.log('first =',x.getemp());
+        console.log('second =',x.getemp());
+        console.log('third =',x.getemp());
+    </script>
+</body>
+</html>

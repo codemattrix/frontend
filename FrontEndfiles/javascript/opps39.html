@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>dynamic function</h1>
+    <script>
+        let META=Symbol('metadata');
+        class Car{
+            constructor(x,y){
+                this.brand=x;
+                this.model=y;
+            }
+            [META](){
+                return {
+                    brand:this.brand,
+                    model:this.model
+                }
+            }
+        }
+        let x=new Car('mahindra',2022);
+        console.log('dynamic method',META);
+        console.log('result',x[META]());
+        const res=x[META]();
+        document.write(`<h1>res =${res.brand} and ${res.model}</h1>`)
+    </script>
+</body>
+</html>

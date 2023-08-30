@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Company{
+            constructor(x,y){
+                this.empid=x;
+                this.empdes=y;
+            }
+            getemp(){
+                document.write(`<h1>emp id: ${this.empid}<br>emp designation :${this.empdes}</h1>`)
+            }
+        }
+        class Emp extends Company{
+            constructor(a,b,c,d){
+                super(a,b);
+                this.name=c;
+                this.email=d;
+            }
+            getemp(){
+                super.getemp();
+                document.write(`<h1>emp name :${this.name}<br> emp email : ${this.email}</h1>`)
+            }
+        }
+        let x=new Emp(1122,'software-eng','ravish','ravish@gmail.com');
+        x.getemp();
+    </script>
+</body>
+</html>

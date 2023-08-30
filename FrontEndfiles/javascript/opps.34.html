@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>super keyword</h1>
+    <script>
+        class material{
+            constructor(x,y){
+                this.bric=x;
+                this.cement=y;
+            }
+            getmaterial(){
+                return `<h1>the brics :${this.bric} :: cement is: ${this.cement}</h1>`;
+            }
+        }
+        class building extends material{
+            constructor(a,b,c){
+                super(a,b);
+                this.sand=c;
+            }
+            getmaterial(){
+                document.write(`<h1>${super.getmaterial()}</h1>`);
+                return `the sand is : ${this.sand}`;
+            }
+        }
+        let x=new building('7inches','ultratech','dust');
+       document.write(`<h1>${x.getmaterial()}</h1>`) ;
+    </script>
+</body>
+</html>

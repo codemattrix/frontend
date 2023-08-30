@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Card{
+            constructor(){
+                this.number='';
+            }
+            set CardNum(val){
+                this.number=val;
+            }
+            get CardNum(){
+                return this.number;
+            }
+        }
+        let x=new Card();
+        x.CardNum='0033 1155 2244';
+        document.write(`<h1>First card =${x.CardNum}</h1>`)
+    </script>
+</body>
+</html>

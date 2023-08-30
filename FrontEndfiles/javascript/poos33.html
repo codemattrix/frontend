@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Course{
+            constructor(){
+                this.title='java full-statck';
+                this.fee='36k';
+            }
+            getCourse(){
+                document.write(`<h1>title is : ${this.title} :: fee is ${this.fee}</h1>`)
+            }
+        }
+        class user extends Course{
+            constructor(){
+                super();
+            }
+        }
+        let x=new user();
+        x.getCourse();
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>inheritance </h1>
+    <script>
+        class Course{
+            constructor(va,pa){
+                this.title=va;
+                this.fee=pa;
+            }
+            getCourse(){
+                document.write(`<h1>title is =${this.title} :: fee is=${this.fee}</h1>`)
+            }
+        }
+        class user extends Course{
+            constructor(x,y){
+                super(x,y);
+            }
+        }
+        let x=new user("Java full-stack",'36k');
+        x.getCourse();
+    </script>
+</body>
+</html>

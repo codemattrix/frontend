@@ -8,17 +8,19 @@
 <body>
     <script>
         class Ravish{
-            constructor(){
-                document.write('hi this is constructor');
-                this.name='ravish';
+            constructor(val){
+                this.name=val;
             }
-            static getName(na){
-                document.write('<h1> hi '+this.name+' welcome to JS</h1>');
-                document.write('<h1> hi '+na+' welcome to JS</h1>')
-            } 
-
+            static print(){
+                document.write(`<h1>name =${this.name}</h1>`);
+            }
+            display(){
+                document.write(`<h1>name=${this.name}</h1>`);
+            }
         }
-        ravish.getName('anish');
+        let x=new Ravish('anish');
+        Ravish.print();
+        x.display();
     </script>
 </body>
 </html>
