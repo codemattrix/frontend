@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+     var x=new Map(); 
+     x.set('id',1);
+     x.set('name','ravish');
+     x.set('duration','6-months');
+     console.log('set x= ',x);
+     for(let it of x){
+        console.log(it);
+     }
+     for(let it of x.keys()){
+        console.log('key',it);
+     }
+     for(let[key,val] of x){
+        console.log(`key=${key} and value=${val}`);
+     }
+     for(let it in x.keys()){
+        console.log(it);
+     }
+  </script>
+</body>
+</html>

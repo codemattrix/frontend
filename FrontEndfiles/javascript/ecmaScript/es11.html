@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h3>map()</h3>
+     <script>
+        var x=new Map();
+        x.set('id',1);
+        x.set('title','java-fullstack');
+        x.set('duration','6-months');
+        x.set('isenable',true);
+        console.log(x)
+        console.log('id = ',x.get('id'));
+        console.log('title = ',x.get('title'));
+        console.log('duration = ',x.get('duration'));
+
+        document.write('id = ',x.get('id'));
+        document.write('title = ',x.get('title'));
+        document.write('duration = ',x.get('duration'));
+     </script>
+</body>
+</html>

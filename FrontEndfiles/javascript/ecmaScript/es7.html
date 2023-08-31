@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>rest operators</h3>
+    <script>
+        let sum=0;
+        function sum1(...num){
+            console.log('nums are = ',num);
+        num.forEach(element => {
+            sum+=element;
+        });
+        document.write(`<h2>sum of (1,2,3,4,5,6,7,8)= ${sum}</h2>`);
+        }
+        sum1(1,2,3,4,5,6,7,8);
+    </script>
+</body>
+</html>

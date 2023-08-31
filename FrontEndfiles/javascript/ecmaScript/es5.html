@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>default parameter</h1>
+    <script>
+        function sum(a,b=6){
+            return a+b;
+        }
+        document.write(`<h1>sum of the nums : ${sum(22,12)}</h1>`);
+        document.write(`<h1>sum of the nums: ${sum(22)}</h1>`);
+
+        function mul(a,b=3,c=2){
+            return a*b*c;
+        }
+        document.write(`<h1>mul of the nums : ${mul(2,3,4)}</h1>`);
+        document.write(`<h1>mul of the nums : ${mul(2)}</h1>`);
+        
+    </script>
+</body>
+</html>

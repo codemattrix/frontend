@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>spread(...) operator</h3>
+    <script>
+        var num=[11,22,33,44,55,66,77];
+        console.log('derect array',num);
+        console.log('with spread operator',...num);
+
+        document.write(`<h2>max value =${Math.max(num)}</h2>`);
+        document.write(`<h2>max value =${Math.max([11,22,33,44,55,66,77])}</h2>`);
+
+        document.write(`<h2>max value =${Math.max(...num)}</h2>`);
+        document.write(`<h2>max value =${Math.min(...num)}</h2>`);
+    </script>
+</body>
+</html>

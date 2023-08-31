@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h2> Array of object join</h2>
+   <script>
+    let c1=[{
+        id:1,
+        name:'ravi',
+        email:'ravish@gmail.com'
+    },
+    {
+        id:2,
+        name:'anish',
+        email:'anish@gmail.com'
+    }];
+    let c2=[
+        {
+            id:3,
+        name:'anish',
+        email:'anish@gmail.com'   
+        },
+        {
+            id:4,
+        name:'anishnayaka',
+        email:'anish@gmail.com'
+        }
+    ];
+    let c3=[
+        {
+            id:5,
+        name:'ani',
+        email:'anish@gmail.com'
+        },
+        ...c1,
+        ...c2
+    ];
+    console.log(c1);
+    console.log(c2);
+    console.log(c3);
+   </script>
+</body>
+</html>
