@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>deleting properties</h2>
+    <script>
+        var x=new Object();
+        x.name='ravish';
+        x.email='ravish@gmail.com';
+        x.age=27;
+        console.log('before delete x=',x);
+        delete x.name;
+        delete x.email;
+        delete x.age;
+        console.log('after delete ',x);
+
+
+        // deleting with using loop
+        var y=new Object();
+        y.name='anish';
+        y.email='anish@gmail.com';
+        y.age=25;
+        console.log('before delete ',y);
+        for (const key in y) {
+            delete y[key];
+        }
+        console.log('after delete ',y);
+    </script>
+</body>
+</html>

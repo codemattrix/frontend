@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let emp=new Set();
+        emp.add('ravish');
+        emp.add('anish');
+        emp.add('maha');
+        emp.add('ambu');
+        emp.add('laksh');
+        console.log('set now ',emp.entries());
+        emp.forEach(function(i){
+            document.write(`<h3>${i}</h3>`);
+        });
+        console.log('has "ravish"',emp.has('ravish'));
+        console.log('has "tamil"',emp.has('tamil'));
+
+        emp.delete('ravish');
+        console.log('after delete ',emp.entries());
+        console.log('has "ravish"',emp.has('ravish'));
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>object.defineProperty()</h3>
+    <script>
+        'use strict';
+        var user={};
+        console.log('before',user);
+        Object.defineProperty(user,'name',{
+            value:'ravish',
+            writable:false //it will not allow to overwrite
+        });
+        try {
+            user.name='anish'; //throw error 
+        } catch (error) {
+            console.log(error)
+        }
+        console.log('after = ',user);
+    </script>
+</body>
+</html>
