@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>local storage</h1>
+    <form autocomplete="off" id="userForm">
+        <div>
+            <label for="name">enter name:</label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <div>
+            <input type="submit" value="Add user">
+        </div>
+    </form>
+    <hr>
+    <h1 id="info"></h1>
+    <button onclick="deleteUser()">delete user</button>
+    <script>
+        let userForm=document.getElementById('userForm');
+        let fname=document.getElementById('name');
+        let info=document.getElementById('info');
+
+        function deleteUser(){
+            if(confirm('are you sure to delete user ?')){
+                if(localStorage.getItem('user')){
+                    localStorage.removeItem('user');
+                    alert('user info cleared successfully');
+                    window.location.reload();
+                }else{
+                    alert('no user info exist..');
+                }
+
+            }else{
+                alert('delete terminated...');
+            }
+        }
+        userForm.addEventListener('submit',async (event)=>{
+            localStorage.setItem("user",fname.value);
+            alert('user name added')
+        });
+        (function(){
+            if(localStorage.getItem('user')){
+                info.innerText=`username is ${localStorage
+                .getItem('user')}`;
+            }else{
+                info.innerText=`no username exists..`;
+            }
+        })()
+       
+    </script>
+</body>
+</html>

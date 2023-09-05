@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Proxy for validation</h1>
+    <script>
+        let emp={
+            id:1,
+            name:'ravi',
+            email:"ravish@gamil.com"
+        };
+        const handler={
+            get(obj,prop){
+                if(prop==="name" || prop==="email"){
+                    return obj[prop];
+                }else{
+                    return "not allowed";
+                }
+            }
+        }
+        const pr=new Proxy(emp,handler);
+        console.log(`name = `,pr.name);
+        console.log(`name =`,pr.email);
+        console.log(`name =`,pr.id);
+    </script>
+</body>
+</html>

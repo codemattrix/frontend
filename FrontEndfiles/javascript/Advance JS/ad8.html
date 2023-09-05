@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        table{
+            text-align: center;
+        }
+        th,td{
+            border:1px  solid black;
+        }
+    </style>
+</head>
+<body>
+    <h3>fetch()</h3>
+    <div class="container">
+        <table>
+            <thead> <tr>
+                <th>images</th>
+                <th>price</th>
+                <th>stock</th>
+                <th>desc</th>
+                <th>category</th>
+            </tr></thead>
+           <tbody id="block"></tbody>
+        </table>
+    </div>
+    
+    <script>
+        fetch(`https://dummyjson.com/products`)
+        .then(response => response.json())
+        .then(res =>{
+            console.log('res =',res);
+            print(res);
+        })
+        .catch(err => console.log(err.message));
+        let blk=document.querySelector('#block');
+        function print(data){
+            data.forEach(item =>{
+               // let table=document.createElement('');
+                   // blk.innerHTML=`<tr><td>${item.thumbnail}</td></tr>`;
+                let tr=document.createElement('tr');
+                let td=document.createElement('td');
+                let td1=document.createElement('td');
+                let td2=document.createElement('td');
+                let td3=document.createElement('td');
+                let td4=document.createElement('td');
+                
+                td.textContent=item.thumbnail;
+                td1.textContent=item.price;
+                td2.textContent=item.stock;
+                td3.textContent=item.description;
+                td4.textContent=item.category;
+
+                tr.appendChild(td);
+                tr.appendChild(td1);
+                tr.appendChild(td2);
+                tr.appendChild(td3);
+                tr.appendChild(td4);
+
+                blk.appendChild(tr);
+
+            });
+        }
+        </script>
+</body>
+</html>

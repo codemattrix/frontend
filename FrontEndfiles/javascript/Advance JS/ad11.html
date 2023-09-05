@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Proxy of object read only</h1>
+    <script>
+        let user={
+            name:'ravi',
+            age:27,
+            isActive:true
+        };
+        let handler={
+            set:function (obj,prop){
+                if(obj[prop]){
+                    console.log('read only....');
+                }else{
+                    console.log('property not exist...');
+                }
+            }
+        }
+        const pr=new Proxy(user,handler);
+        pr.name="anish";
+        pr.email='anish@gmail.com';
+    </script>
+</body>
+</html>
